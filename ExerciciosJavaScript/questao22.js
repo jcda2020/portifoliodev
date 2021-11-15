@@ -1,5 +1,7 @@
 
 // demonstrar o sistema de módulos 
+ //const jurosCompostos = require ("./questao06")
+
 function anuidade(mes, valor) {
 
 let valorAnuidade

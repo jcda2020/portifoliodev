@@ -6,16 +6,21 @@ return montante
 
 }
 
-console.log(juros_Simples(100, 0.1,5))
+//console.log(juros_Simples(100, 0.1,5))
 
 juros = (C, i, t) => { return C + C * i * t }
 
-console.log(juros(100, 0.1,5))
+//console.log(juros(100, 0.1,5))
 
-jurosCompostos = (C, i,t) =>{
-return C* Math.pow((1 + i),t)
 
-}
+module.exports = jurosCompostos = (capital, taxa, tempo) => { 
+
+return  capital * (1 + taxa)**tempo
+
+}  
+
+//console.log(jurosCompostos(100, 0.1, 5))
+
 
 
 
